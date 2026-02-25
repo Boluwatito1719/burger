@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <style>
+        #check:checked~ul {
+            left: 0
+        }
+    </style>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+</head>
+<body>
+      <div
+            class="flex  justify-between items-center  h-19 shadow-2xl p-3 items-left fixed top-0 left-0  w-full bg-black/40 backdrop-blur-sm flex items-center z-50 ">
+            <div>
+                <h1 class="text-4xl font-bold text-blue-500 ps-10"><i>LOGO</i></h1>
+            </div>
+                 <div>
+                <input type="checkbox" id="check" hidden>
+                <label for="check" class=" bg-blue-500   float-right   p-5 rounded-3xl    lg:hidden"><img
+                        src="icon-hamburger.svg">
+                </label>
+                <ul class=" -mr-10 lg:flex 
+        space-x-4 text-gray-500 p-25 lg:p-0 lg:text-white uppercase rounded fixed lg:relative h-screen
+        lg:h-0 w-[100%] lg:w-fit top-20 lg:top-0 left-[-100%] lg:left-0 text-sm 
+        transition-all duration-300 lg:transition-none text-center bg-white  md:translate-x-0  
+       ">
+                    <li><a href="#Home" class="hover:text-blue-600 cursor-pointer mt-3">Home</li>
+                    <li><a href="#About" class="hover:text-blue-600 cursor-pointer mt-3">About</li>
+                    <li><a href="#Service" class="hover:text-blue-600 cursor-pointer mt-3">Service</li>
+                    <li><a href="#ourSkill" class="hover:text-blue-600 cursor-pointer mt-3">Skills</li>
+                    <li><a href="#Contact"
+                            class="hover:text-blue-600 cursor-pointer text-white bg-blue-500 pt-2 pb-2 rounded-tl-lg rounded-br-lg hover:bg-white  duration-600 ease">
+                            <b>Contact</b></li>
+                    <li><a href="#loveit"
+                            class="hover:text-white cursor-pointer  text-blue-500 bg-white pt-2 pb-2 rounded-tl-lg rounded-br-lg hover:bg-blue-500   duration-600 ease">
+                            <b>Booknow</b></li>
+                </ul>
+            </div>
+    </div>
+</body>
+</html>
